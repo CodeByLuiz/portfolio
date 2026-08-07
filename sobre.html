@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luiz André — cybersecurity student</title>
+
+  <!-- Google Fonts: Bebas Neue (display), Chivo (body), Space Mono (labels/data) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chivo:wght@400;700&family=Space+Mono:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="shader-bg" aria-hidden="true">
+    <canvas id="shader-canvas"></canvas>
+  </div>
+
+  <main>
+    <!-- ============ HERO / STAGE 01 ============ -->
+    <section class="hero" id="inicio">
+
+      <!-- Ambient ember particles, populated by js/embers.js -->
+      <div class="embers-layer" id="embers-layer" aria-hidden="true"></div>
+
+      <div class="hero__grid">
+
+        <!-- Left column: typography & call to action -->
+        <div class="hero__content">
+          <div class="hero__glow" aria-hidden="true"></div>
+
+          <div class="hero__eyebrow">
+            <span class="hero__eyebrow-bar" aria-hidden="true"></span>
+            <span class="label-caps">cybersecurity student</span>
+          </div>
+
+          <h1 class="hero__title">
+            <span class="hero__title-line">Luiz</span>
+            <span class="hero__title-line hero__title-line--accent">André</span>
+          </h1>
+
+
+          <a class="btn btn--primary" href="#projetos">
+            <span class="btn__fill" aria-hidden="true"></span>
+            <span class="btn__label">Ver Projetos</span>
+            <span class="btn__icon material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+          </a>
+
+          <a class="btn btn--primary" href="#projetos">
+            <span class="btn__fill" aria-hidden="true"></span>
+            <span class="btn__label">Redes Sociais</span>
+            <span class="btn__icon material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+          </a>
+
+          <a class="btn btn--primary" href="sobre.html">
+            <span class="btn__fill" aria-hidden="true"></span>
+            <span class="btn__label">Sobre Mim</span>
+            <span class="btn__icon material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+          </a>
+
+          <a class="btn btn--primary" href="#projetos">
+            <span class="btn__fill" aria-hidden="true"></span>
+            <span class="btn__label">Habilidades</span>
+            <span class="btn__icon material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+          </a>
+        </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  
+  </main>
+
+  <script src="js/shader.js"></script>
+  <script src="js/embers.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
