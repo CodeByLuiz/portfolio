@@ -250,8 +250,8 @@ main {
 
 .hero__title {
   font-family: var(--font-display);
-  font-size: var(--fs-headline-lg-mobile);
-  line-height: var(--lh-headline-lg-mobile);
+  font-size: 56px;
+  line-height: 54px;
   text-transform: uppercase;
   margin: 0 0 32px;
   display: flex;
@@ -433,6 +433,13 @@ main {
   
 }
 
+/* Em telas pequenas a imagem some, para não brigar com o texto */
+@media (max-width: 767px) {
+  .hero__portrait-img {
+    display: none;
+  }
+}
+
 @keyframes float-portrait {
   0%,
   100% {
@@ -479,6 +486,12 @@ main {
   max-width: 44rem;
 }
 
+@media (min-width: 1024px) {
+  .about__inner {
+    max-width: 62rem;
+  }
+}
+
 .about__eyebrow {
   display: flex;
   align-items: center;
@@ -511,8 +524,8 @@ main {
 
 @media (min-width: 1024px) {
   .about__title {
-    font-size: var(--fs-headline-lg);
-    line-height: var(--lh-headline-lg);
+    font-size: 64px;
+    line-height: 64px;
   }
 }
 
@@ -525,6 +538,15 @@ main {
   margin: 0;
   padding: 8px 0 8px 24px;
   border-left: 4px solid var(--color-outline-variant);
+}
+
+@media (min-width: 1024px) {
+  .about__text {
+    font-size: 24px;
+    line-height: 38px;
+    max-width: 56rem;
+    padding: 16px 0 16px 32px;
+  }
 }
 
 /* ==========================================================================
